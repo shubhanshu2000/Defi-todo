@@ -4,7 +4,12 @@ const AddTodo = () => {
   return (
     <>
       <section className="flex w-[18.5rem] m-4 bg-[#242731] px-3 py-3 rounded-md justify-between items-center">
-        <h4 className="text-white ">Add Todo</h4>
+        <input
+          type="text"
+          placeholder="Add Todo"
+          className="text-white bg-transparent outline-none "
+          onChange={(e) => console.log(e.target.value)}
+        />
         <img src={Add} alt="Add Todo" />
       </section>
     </>
